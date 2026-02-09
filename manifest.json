@@ -1,0 +1,24 @@
+{
+  "name": "Mohtasim Arif Portfolio",
+  "short_name": "Mohtasim",
+  "description": "Professional Portfolio of Mohtasim Arif - Full Stack Developer",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#081b29",
+  "theme_color": "#ff6a00",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

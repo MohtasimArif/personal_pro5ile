@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohtasim Arif - Portfolio</title>
+    <link rel="stylesheet" href="modern.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff6a00">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Particles.js Library -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+<!-- Particles.js Container -->
+
+    <!-- Header -->
+    <header class="header">
+        <a href="javascript:void(0)" class="logo">Portfolio</a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+  <!-- Chatbot Icon -->
+  <div id="chatbot-icon" onclick="toggleChat()">
+    <i class="bx bx-message-dots"></i>
+</div>
+
+    <!-- Chatbox -->
+     <!-- Chat icon -->
+     <div id="chat-icon-container" class="pulse" onclick="toggleChatbox()">
+        <svg id="chat-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+        </svg>
+    </div>
+
+    <!-- Chatbox -->
+    <div id="chatbox">
+        <div id="chat-header">
+            <div id="chat-header-left">
+                <svg id="chat-header-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+                </svg>
+                <span>Chatbot</span>
+            </div>
+            <button onclick="closeChatbox()">✖</button>
+        </div>
+        <div id="chat-body">
+            <div id="messages"></div>
+        </div>
+        <div id="chat-footer">
+            <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+
+<!-- Home Section -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Mohtasim Arif</h1>
+        <h3>And I am a <span class="text"></span></h3>
+        <p>
+            I am a <strong>web developer</strong> with <strong>two years of experience</strong> in building <strong>dynamic and responsive web applications</strong>. 
+            My expertise spans <strong>frontend and backend development, machine learning, and UI/UX design</strong>. I have a strong command of <strong>HTML, CSS, JavaScript</strong>, and modern frameworks such as 
+            <strong>React.js, Angular, and Vue.js</strong>. On the backend, I work with <strong>Node.js, Express.js, and Next.js</strong>, integrating databases like <strong>MongoDB and Firebase</strong>. 
+            
+        </p>
+        <div class="home-sci">
+            <a href="https://wa.me/923126587662" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.tiktok.com/@they_call_me_murtasim_xd?_t=ZS-8tSpyZKlrol&_r=1" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            <a href="https://www.instagram.com/they_call_me_murtasim_xd/profilecard/?igsh=ZGE2Zzk5dmJiZTZ5" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/murtasim-arif-791572252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.facebook.com/share/15abCVxFPG/?mibextid=qi2Omg" target="_blank"><i class='bx bxl-facebook'></i></a>
+
+        </div>
+        <a href="#about" class="btn-box">More About Me</a>
+    </div>
+
+    <!-- PNG Image Section -->
+    <div class="home-img">
+        <img src="image.png" alt="Mohtasim Arif" class="profile-img">
+    </div>
+
+</section>
+
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="IMG-20250612-WA0004-removebg-preview.png" alt="About Me">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Web Developer</h4>
+            <p>
+                I am a <strong>web developer</strong> with <strong>two years of experience</strong> in creating <strong>dynamic and responsive web applications</strong>. I am proficient in <strong>HTML, CSS, JavaScript</strong>, and modern frameworks like <strong>React, Angular, and Vue.js</strong>. 
+                In addition to web development, I have <strong>expertise in Machine Learning</strong>, specializing in <strong>classification and Natural Language Processing (NLP)</strong>. I have worked on several projects, including <strong>brain tumor detection models</strong>, 
+                <strong>facial expression recognition</strong>, and <strong>chatbots using LLaMA and other libraries</strong>. 
+                Furthermore, I have a strong background in <strong>UI/UX design</strong> and am proficient in <strong>Figma and Adobe XD</strong>. 
+                My web development skill set includes frontend technologies like <strong>HTML, React.js, and JavaScript</strong>, backend frameworks such as <strong>Express.js and Next.js</strong>, 
+                and database management using <strong>Firebase and MongoDB</strong>.
+            </p>
+            
+            <a href="#skills" class="btn-box">More About Me</a>
+            <a href="Mohtasim Resume CS updated.pdf" download="Mohtasim Resume CS updated.pdf" class="btn-box">Download Resume</a>
+
+        </div>
+    </section>
+
+  <div class="technical-skills">
+    <h2>Technical <span>Skills</span></h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class='bx bxl-html5' style="color: #e34c26;"></i>
+            <div class="card-content">
+                <span class="percentage">90%</span>
+                <p class="text">HTML</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bxl-css3' style="color: #264de4;"></i>
+            <div class="card-content">
+                <span class="percentage">85%</span>
+                <p class="text">CSS</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bxl-javascript' style="color: #f0db4f;"></i>
+            <div class="card-content">
+                <span class="percentage">75%</span>
+                <p class="text">JavaScript</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bxl-python' style="color: #306998;"></i>
+            <div class="card-content">
+                <span class="percentage">70%</span>
+                <p class="text">Python</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bxl-react' style="color: #61dbfb;"></i>
+            <div class="card-content">
+                <span class="percentage">80%</span>
+                <p class="text">React js</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bxl-nodejs' style="color: #68a063;"></i>
+            <div class="card-content">
+                <span class="percentage">75%</span>
+                <p class="text">Node js</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bxl-firebase' style="color: #ffca28;"></i>
+            <div class="card-content">
+                <span class="percentage">70%</span>
+                <p class="text">Firebase</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bxl-postgresql' style="color: #336791;"></i>
+            <div class="card-content">
+                <span class="percentage">65%</span>
+                <p class="text">SQL</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class='bx bx-data' style="color: #3ecf8e;"></i>
+            <div class="card-content">
+                <span class="percentage">60%</span>
+                <p class="text">Supabase</p>
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+<section class="skills" id="skills">
+    
+    <div class="skills-container">
+        <div class="professional-skills">
+            <h2>Professional <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bx-bulb'></i>
+                    <div class="card-content">
+                        <span class="percentage">90%</span>
+                        <p class="text">Creativity</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class='bx bx-chat'></i>
+                    <div class="card-content">
+                        <span class="percentage">65%</span>
+                        <p class="text">Communication</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class='bx bx-brain'></i>
+                    <div class="card-content">
+                        <span class="percentage">75%</span>
+                        <p class="text">Problem Solving</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class='bx bx-group'></i>
+                    <div class="card-content">
+                        <span class="percentage">85%</span>
+                        <p class="text">Teamwork</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Expertise Section -->
+   <section class="expertise" id="expertise">
+    <h1 class="sub-title">My <span>Expertise</span></h1>
+    <div class="expertise-container">
+        
+        <div class="expertise-card">
+            <i class='bx bx-code-alt'></i>
+            <h2>Web Development</h2>
+            <p>
+                I specialize in building dynamic, full-stack web applications using React, Node.js, and Python. I integrate robust backend solutions with SQL, Supabase, and Firebase to ensure high performance and scalability.
+            </p>
+        </div>
+
+        <div class="expertise-card">
+            <i class='bx bx-brain'></i>
+            <h2>Machine Learning</h2>
+            <p>
+                I have experience in developing machine learning models using Python, TensorFlow, and Scikit-learn for tasks like classification, regression, and NLP.
+            </p>
+        </div>
+
+        <div class="expertise-card">
+            <i class='bx bxl-react'></i>
+            <h2>React Native App Developer</h2>
+            <p>
+                I develop cross-platform mobile applications using React Native and JavaScript. My apps leverage Node.js and Python services, with real-time data management powered by Firebase, Supabase, and SQL.
+            </p>
+        </div>
+        
+    </div>
+</section>
+<section class="projects" id="projects">
+    <h2 class="sub-title">My <span>Projects</span></h2>
+    <div class="projects-container">
+
+        <div class="project-card">
+            <img src="AI image.png" alt="React Native Text to Image">
+            <div class="project-info">
+                <h3>React Native Text-to-Image App</h3>
+                <p>A mobile application that generates images from text prompts using AI models, built with React Native and integrated with external APIs for seamless image processing.</p>
+                <a href="https://github.com/MohtasimArif/React-Native-App-Text-to-image-.git" target="_blank" class="btn-box">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="Accident Detection.png" alt="SafeRoad AI">
+            <div class="project-info">
+                <h3>SafeRoad AI</h3>
+                <p>An intelligent road safety system using Machine Learning and Computer Vision to detect road anomalies and enhance driver safety through real-time Python-based analytics.</p>
+                <a href="https://github.com/MohtasimArif/saferoad-ai.git" target="_blank" class="btn-box">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="Screenshot 2025-03-09 140703.png" alt="Pokemon Analytics">
+            <div class="project-info">
+                <h3>Pokemon Apache Spark Analytic Job</h3>
+                <p>A big data project leveraging Apache Spark to perform large-scale data analysis and processing on extensive Pokemon datasets.</p>
+                <a href="https://github.com/MohtasimArif/Pokemon-Apache-Spark-Analytic-Job.git" target="_blank" class="btn-box">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="Screenshot 2025-03-09 142542.png" alt="GPT Models">
+            <div class="project-info">
+                <h3>GPT Predictive Text Generation</h3>
+                <p>Developing predictive text systems using GPT models and Python to simulate natural language patterns and automated content creation.</p>
+                <a href="https://github.com/MohtasimArif/Predictive-Text-Generation-using-GPT-Models.git" target="_blank" class="btn-box">View Project</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    
+    <section class="software-section">
+    <h1 class="software-title">Software I <span>Use</span></h1>
+    <div class="software-icons">
+        <div class="software">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+            <p>VS Code</p>
+        </div>
+        <div class="software">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab">
+            <p>Google Colab</p>
+        </div>
+        <div class="software">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook">
+            <p>Jupyter Notebook</p>
+        </div>
+        <div class="software">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
+            <p>Figma</p>
+        </div>
+        <div class="software">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg" alt="Adobe XD">
+            <p>Adobe XD</p>
+        </div>
+        <div class="software">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Adobe Photoshop">
+            <p>Adobe Photoshop</p>
+        </div>
+        <div class="software">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase">
+            <p>Supabase</p>
+        </div>
+        <div class="software">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+            <p>Firebase</p>
+        </div>
+        <div class="software">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+            <p>SQL</p>
+        </div>
+        <div class="software">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+            <p>MongoDB</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h1 class="sub-title">Contact <span>Me</span></h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class='bx bxs-send'></i>mohtasimarif25@gmail.com</p>
+                <p><i class='bx bxs-phone'></i>03126587662</p>
+                <div class="social-links">
+                    <a href="https://wa.me/923126587662" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.tiktok.com/@they_call_me_murtasim_xd?_t=ZS-8tSpyZKlrol&_r=1" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://www.instagram.com/they_call_me_murtasim_xd/profilecard/?igsh=ZGE2Zzk5dmJiZTZ5" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/murtasim-arif-791572252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/share/15abCVxFPG/?mibextid=qi2Omg" target="_blank"><i class='bx bxl-facebook'></i></a>
+                </div>
+                
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="subject" placeholder="Subject">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="formMessage"></p> <!-- Success/Error Message -->
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Developed by Mohtasim Arif &copy; 2024</p>
+        <a href="#home" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+    </div>
+    <script>
+        // Initialize Email.js (Make sure to replace with your own Email.js keys)
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("8vb0cw-srIf5ndYQc"); // Replace with your Email.js User ID
+});
+
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Get input values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const formMessage = document.getElementById("formMessage");
+
+    // Validate Inputs
+    if (name === "" || email === "" || message === "") {
+        formMessage.style.color = "red";
+        formMessage.innerText = "Please fill in all required fields.";
+        return;
+    }
+
+    // Email.js Service Details
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+    };
+
+    // Send Email
+    emailjs.send("service_alnr0an", "template_rf299cd", templateParams)
+        .then((response) => {
+            formMessage.style.color = "green";
+            formMessage.innerText = "Message sent successfully! 🎉";
+            document.getElementById("contactForm").reset();
+        })
+        .catch((error) => {
+            formMessage.style.color = "red";
+            formMessage.innerText = "Failed to send message. Try again later.";
+        });
+});
+
+    </script>
+    <script>
+         function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a navigation item
+        document.querySelectorAll('.navbar a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelector('.navbar').classList.remove('active');
+            });
+        });
+
+        // Add active class to the current navigation item
+        const navLinks = document.querySelectorAll('.navbar a');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+     <script>
+        // Store chat state
+        let chatState = {
+            isOpen: false,
+            isTyping: false
+        };
+
+        // Toggle chatbox visibility with animation
+        function toggleChatbox() {
+            const chatbox = document.getElementById('chatbox');
+            const chatIcon = document.getElementById('chat-icon-container');
+            
+            if (!chatState.isOpen) {
+                // Open chatbox
+                chatbox.classList.remove('slide-out');
+                chatbox.classList.add('slide-in');
+                chatIcon.classList.remove('pulse');
+                chatState.isOpen = true;
+                
+                // If this is the first open, show welcome message
+                if (document.getElementById('messages').children.length === 0) {
+                    setTimeout(() => {
+                        showTypingIndicator();
+                        setTimeout(() => {
+                            hideTypingIndicator();
+                            appendMessage("Hello! How can I help you today?", "bot");
+                        }, 1500);
+                    }, 500);
+                }
+            } else {
+                // Close chatbox
+                closeChatbox();
+            }
+        }
+
+        // Close chatbox with animation
+        function closeChatbox() {
+            const chatbox = document.getElementById('chatbox');
+            const chatIcon = document.getElementById('chat-icon-container');
+            
+            chatbox.classList.remove('slide-in');
+            chatbox.classList.add('slide-out');
+            chatIcon.classList.add('pulse');
+            
+            // After animation completes, hide the chatbox
+            setTimeout(() => {
+                chatbox.style.display = 'none';
+                chatState.isOpen = false;
+            }, 300);
+        }
+
+        // Show typing indicator animation
+        function showTypingIndicator() {
+            if (chatState.isTyping) return;
+            
+            const messagesContainer = document.getElementById('messages');
+            const typingIndicator = document.createElement('div');
+            typingIndicator.classList.add('typing-indicator');
+            typingIndicator.id = 'typing-indicator';
+            
+            // Add the three dots
+            for (let i = 0; i < 3; i++) {
+                const dot = document.createElement('span');
+                typingIndicator.appendChild(dot);
+            }
+            
+            messagesContainer.appendChild(typingIndicator);
+            chatState.isTyping = true;
+            
+            // Auto scroll to show typing indicator
+            const chatBody = document.getElementById('chat-body');
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        // Hide typing indicator
+        function hideTypingIndicator() {
+            const typingIndicator = document.getElementById('typing-indicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+                chatState.isTyping = false;
+            }
+        }
+
+        // Send message function
+        function sendMessage() {
+            const userInput = document.getElementById('user-input');
+            const message = userInput.value.trim();
+            
+            if (message !== '') {
+                // Add user message
+                appendMessage(message, 'user');
+                
+                // Clear input
+                userInput.value = '';
+                
+                // Process the message (simulate bot response)
+                processBotResponse(message);
+            }
+        }
+
+        // Handle Enter key press
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        // Append message to chat
+        function appendMessage(text, sender) {
+            const messagesContainer = document.getElementById('messages');
+            const messageElement = document.createElement('div');
+            
+            messageElement.classList.add('message');
+            messageElement.classList.add(sender + '-message');
+            messageElement.textContent = text;
+            
+            // Add boximate entrance animation for message
+            messageElement.style.opacity = '0';
+            messageElement.style.transform = 'translateY(10px)';
+            
+            messagesContainer.appendChild(messageElement);
+            
+            // Force reflow to enable animation
+            void messageElement.offsetWidth;
+            
+            // Apply animation
+            messageElement.style.transition = 'all 0.3s ease';
+            messageElement.style.opacity = '1';
+            messageElement.style.transform = 'translateY(0)';
+            
+            // Auto scroll to bottom
+            const chatBody = document.getElementById('chat-body');
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        // Process bot response with typing indicator
+        function processBotResponse(userMessage) {
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Simulate typing delay (longer for longer responses)
+            const lowerCaseMessage = userMessage.toLowerCase();
+            let responseTime = 1000 + Math.random() * 1000; // Between 1-2 seconds
+            
+            setTimeout(() => {
+                // Hide typing indicator
+                hideTypingIndicator();
+                
+                let botResponse;
+                
+                // Simple response logic (can be expanded)
+                if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
+                    botResponse = "Hello there! How can I assist you today?";
+                } else if (lowerCaseMessage.includes('help')) {
+                    botResponse = "I'm here to help! What do you need assistance with?";
+                } else if (lowerCaseMessage.includes('bye') || lowerCaseMessage.includes('goodbye')) {
+                    botResponse = "Goodbye! Feel free to come back if you have more questions.";
+                } else if (lowerCaseMessage.includes('thank')) {
+                    botResponse = "You're welcome! Is there anything else I can help with?";
+                } else {
+                    botResponse = "I'm still learning. Can you ask me something else or rephrase your question?";
+                }
+                
+                appendMessage(botResponse, 'bot');
+            }, responseTime);
+        }
+
+        // Add chatbot periodic animation when idle
+        function startIdleAnimation() {
+            const chatIcon = document.getElementById('chat-icon-container');
+            
+            if (!chatState.isOpen) {
+                chatIcon.classList.add('pulse');
+            }
+            
+            // Randomly trigger pulse animation every 10-20 seconds while closed
+            setInterval(() => {
+                if (!chatState.isOpen) {
+                    chatIcon.classList.remove('pulse');
+                    void chatIcon.offsetWidth; // Force reflow
+                    chatIcon.classList.add('pulse');
+                }
+            }, 10000 + Math.random() * 10000);
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            startIdleAnimation();
+        };
+        function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+}
+    </script>
+
+    <script src="main.js"></script>
+    
+
+</body>
+</html>
