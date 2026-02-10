@@ -9,13 +9,13 @@
   "theme_color": "#ff6a00",
   "icons": [
     {
-      "src": "images/IMG-20250612-WA0004-removebg-preview.png",
+      "src": "IMG-20250612-WA0004-removebg-preview.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "images/IMG-20250612-WA0004-removebg-preview.png",
+      "src": "IMG-20250612-WA0004-removebg-preview.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
